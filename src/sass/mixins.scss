@@ -1,0 +1,36 @@
+
+@use '../sass/variables.scss' as *;
+
+@mixin flex-position(
+    $display,
+    $flex-direction,
+    $margin,
+    $justify-content,
+    $text-align,
+    $align-items
+){
+    display: $display;
+    flex-direction: $flex-direction;
+    margin: $margin;
+    justify-content: $justify-content;
+    text-align: $text-align;
+    align-items: $align-items;
+}
+
+@mixin icon-model{
+    margin: .8rem;
+
+    &:hover{
+        cursor: pointer;
+        transition: .1s ease;
+        transform: scale(1.2);
+    }
+}
+
+@mixin btn-model{
+    padding: .8rem 4.5rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: $background-blue; 
+}

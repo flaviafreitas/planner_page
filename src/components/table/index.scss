@@ -1,0 +1,82 @@
+@use '/src/sass/variables' as *;
+@use '/src/sass/mixins.scss' as *;
+
+.table {
+    @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+    );
+    color: $background-white;
+
+    &__content{
+        width: 45vw;
+        th{
+            color: $background-white;
+            border-bottom: 2px solid $background-white;
+        }
+    }
+
+    &__title {
+        color: $background-white;
+        font-family: 'Raleway';
+        font-weight: 300;
+    }    
+    
+    
+    tr{
+        
+        th:first-child {
+            text-align: center;
+            padding: .9rem;
+        }
+        
+        th:last-child {
+            text-align: center;
+        }
+        
+        td:first-child {
+            text-align: left;
+            padding-left: 1rem;
+            P{
+                padding: .4rem;
+            }
+        }
+        
+        td:last-child {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            svg{
+                @include icon-model;
+            }
+        }
+    }
+    
+    
+    &__newitem{
+        width: 45vw;
+        padding: 1rem .4rem;
+        display: flex;
+        justify-content: space-between;
+
+        input{
+            outline: none;
+            padding: .9rem;
+            font-style: italic;
+            background-color: transparent;
+            border: none;
+            color: $background-white;
+            
+        }
+
+        svg{
+            @include icon-model;
+            margin-left: 64%;
+            margin-right: auto;
+        }
+    }
+}

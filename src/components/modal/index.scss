@@ -1,0 +1,77 @@
+@use '/src/sass/variables' as *;
+@use '/src/sass/mixins.scss' as *;
+
+
+.modal {
+  @include flex-position(flex,
+    column,
+    auto,
+    center,
+    center,
+    center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-shadow-black;
+
+  &__content {
+    @include flex-position(flex,
+      column,
+      auto,
+      center,
+      center,
+      center);
+    width: 30vw;
+    height: 17vw;
+    background-color: $background-white;
+    border-radius: 15px;
+    color: $background-black;
+
+    h1{
+      margin: 1.5rem;
+      font-family: 'Raleway';
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    p{
+      margin: 1rem;
+      font-family: 'Raleway';
+      font-size: 22px;
+      font-weight: 400;
+
+    }
+
+    &--btn{
+      margin: 2rem;
+      width: 20vw;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+
+  .btn_blue{
+    @include btn-model;
+    transition-duration: .2s;
+    color: $background-white;
+    border: solid 1px $background-blue;
+    
+    &:hover{
+      transform: translateY(-.1rem);
+      transition-duration: .2s;
+      background-color: $background-black
+    }
+  }
+  
+  .btn_white{
+    @include btn-model();
+    color: $background-black;
+    background-color: $background-white;
+    cursor: not-allowed;
+    border: solid 1px $background-black;
+  }
+
+}

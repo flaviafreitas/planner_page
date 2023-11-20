@@ -1,0 +1,21 @@
+@use '/src/sass/variables' as *;
+@use '/src/sass/mixins.scss' as *;
+
+.home{
+    @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+    );
+    height: 22vh;
+    h1{
+      color: $background-white;
+      margin-top: 1rem;
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
