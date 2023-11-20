@@ -12,7 +12,7 @@ O projeto foi criado com fins educacionais, mas aqui estão algumas das tecnolog
 
 ## Visualização
 
-Você pode ver o planner em ação [aqui](https://countdown-estudo.netlify.app/).
+Você pode ver o planner em ação [aqui](https://planner-page.vercel.app/).
 
 ## Como Executar o Projeto
 

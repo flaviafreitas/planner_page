@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Modal from '../modal/Modal';
+import Modal from '../modal/modal';
 import './index.scss'
 import { FaPen , FaTrash, FaPlus   } from "react-icons/fa6";
 
